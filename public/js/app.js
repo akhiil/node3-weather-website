@@ -1,5 +1,3 @@
-console.log("client side javascript is running")
-
 const weatherForm = document.querySelector("form")
 const search = document.querySelector("input")
 const messageOne = document.querySelector("#message-1")
@@ -12,6 +10,8 @@ weatherForm.addEventListener("submit", (e) => {
   const location = search.value
 
   messageOne.textContent = "Loading..."
+  messageTwo.textContent = ""
+  messageThree.textContent = ""
 
   fetch("/weather?address=" + location).then((response) => {
     response.json().then((data) => {
