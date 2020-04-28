@@ -24,7 +24,7 @@ weatherForm.addEventListener("submit", (e) => {
         // console.log(data.rain)
 
         messageOne.textContent = data.location
-        messageTwo.textContent = data.temprature
+        messageTwo.textContent = data.temperature
         messageThree.textContent = data.rain
       }
     })
